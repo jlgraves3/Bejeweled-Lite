@@ -1,1 +1,1 @@
-# Bejeweled-Lite
+# Bejeweled
