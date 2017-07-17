@@ -1,0 +1,177 @@
+body {
+	display: inline-block;
+	color: white;
+	background-image: url("images/bkg.png");
+	font-family: 'Fugaz One', cursive;
+}
+
+h1 {
+	font-size: 56px;
+	width: 100%;
+	text-align:left;
+	margin: 0 auto;
+	margin-left: 10px;
+	color: #FF47AF;
+	text-shadow: 1px 1px 5px black;
+	z-index: 4;
+}
+
+nav {
+	display: inline;
+	width: 100%;
+	top: 95%;
+	color: #FF47AF;
+	text-shadow: 2px 2px 5px black;
+	position: fixed;
+	font-size: 18px;
+	margin-left: 15%;
+	text-align: left;
+}
+h4 {
+	display: inline;
+	padding: 0px 50px;
+}
+
+#board {
+	display: inline-block;
+	text-align: center;
+	left: 20%;
+	width: 450px;
+	height: 450px;
+	position: absolute;
+	padding: 0;
+    margin: 0 auto;
+    font-size: 0;
+    z-index: -1;
+    margin-top: 50px;
+}
+
+#nice {
+	position: absolute;
+	display: block;
+	top: 300px;
+	left: 25%;
+	width: 100%;
+	height: 20px;
+	z-index: -2;
+	text-align: left;
+	font-size: 80px;
+	color: white;
+	text-shadow: 5px 5px 15px black;
+	opacity: 0;
+}
+#newHighScore {
+	position: absolute;
+	float: center;
+	display: block;
+	top: 200px;
+	left: 25%;
+	width: 50%;
+	margin: 0 auto;
+	height: 20px;
+	z-index: -2;
+	text-align: left;
+	font-size: 80px;
+	color: white;
+	text-shadow: 5px 5px 15px black;
+	opacity: 0;
+}
+.box {
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	padding: 0;
+	position: relative;
+	float: center;
+}
+
+.remove img {
+	box-shadow: inset 0px 0px 15px 4px #FF47AF;
+	border-radius: 50px;
+}
+
+.box:nth-child(2n+1) {
+	background-color: rgba(0,0,0,0.8)
+}
+
+.box:nth-child(2n+0) {
+	background-color: rgba(30,30,30,0.8);
+}
+
+.first {
+	box-shadow: inset 0px 0px 10px 4px #FF47AF;
+	transition: 0.2s;
+}
+
+.first img {
+	animation: spin 3s linear infinite;
+}
+
+img {
+	position: absolute;
+	z-index: 1;
+	margin: auto;
+	display: block;
+}
+
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: 48px;
+		margin-top: 5px;
+		margin-left: 100px;
+	}
+	#board {
+		margin-left: 10px;
+		width: 400px;
+		height: 400px;
+
+	}
+	.box {
+		width: 110px;
+		height: 110px;
+	}
+	img {
+		height: 110px;
+	}
+	nav {
+		margin-left: 0;
+		padding: 0px;
+		text-align: left;
+		font-size: 14px;
+	}
+	#nice {
+		top: 200px;
+	}
+	h4 {
+		padding: 0 20px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	h1 {
+		font-size: 38px;
+		margin-top: 5px;
+		margin-left: 10px;
+	}
+	#board {
+		left: 20px;
+		margin-left: 0px;
+		width: 350px;
+		height: 350px;
+	}
+	nav {
+		margin-left: 0;
+		padding: 0px;
+		text-align: left;
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+};
+
