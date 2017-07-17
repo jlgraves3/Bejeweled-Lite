@@ -225,7 +225,7 @@ function validMove(firstBox,secondBox) {
 	setTimeout(removeMatches,200);
 }
 
-// Swap Jewels Back to Original Spots if Move is Invalid
+//Swap Jewels Back to Original Spots if Move is Invalid
 function swapBack(firstBox,secondBox) {
 	//second is to right of first;
 	if (secondBox.col === firstBox.col+1) {
